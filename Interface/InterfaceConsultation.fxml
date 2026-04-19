@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="464.0" prefWidth="1006.0" stylesheets="/css/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kangamoyet.djadou.kouassid.applicationcentre2sante.InterfaceConsultationController">
+   <children>
+      <Label layoutX="27.0" layoutY="10.0" prefHeight="58.0" prefWidth="238.0" styleClass="raised-interface" text="Consultation">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Pane layoutY="67.0" prefHeight="6.0" prefWidth="1006.0" style="-fx-background-color: #007F7F;" />
+      <VBox layoutX="38.0" layoutY="106.0" prefHeight="118.0" prefWidth="228.0">
+         <children>
+            <Label text="Nom du patient">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="idnom" prefHeight="26.0" prefWidth="160.0" />
+            <Label text="Date de consultation:">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="iddate" editable="false" prefHeight="26.0" prefWidth="228.0" />
+         </children>
+      </VBox>
+      <VBox layoutX="38.0" layoutY="233.0" prefHeight="138.0" prefWidth="262.0">
+         <children>
+            <Label text="Symptomes:">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="li1" prefHeight="99.0" prefWidth="262.0" />
+         </children>
+      </VBox>
+      <VBox layoutX="419.0" layoutY="85.0" prefHeight="138.0" prefWidth="238.0">
+         <children>
+            <Label text="Examens requis:">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="li2" prefHeight="99.0" prefWidth="242.0" />
+         </children>
+      </VBox>
+      <VBox layoutX="707.0" layoutY="85.0" prefHeight="138.0" prefWidth="238.0">
+         <children>
+            <Label text="Traitement prescrit:">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="li4" prefHeight="99.0" prefWidth="242.0" />
+         </children>
+      </VBox>
+      <Separator layoutX="26.0" layoutY="371.0" prefHeight="26.0" prefWidth="980.0" />
+      <VBox layoutX="707.0" layoutY="280.0" prefHeight="68.0" prefWidth="238.0">
+         <children>
+            <Label text="Medecin">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="comboBox" prefHeight="26.0" prefWidth="265.0" />
+         </children>
+      </VBox>
+      <JFXButton fx:id="closeButton" alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="856.0" layoutY="14.0" onMouseClicked="#close" prefHeight="38.0" prefWidth="82.0" style="-fx-background-color: white;" text="Fermer" textFill="#f40404" />
+      <ImageView accessibleText="Project List" fitHeight="26.0" fitWidth="36.0" layoutX="861.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:///C:/Users/ADMIN/IdeaProjects/ApplicationCentre2Sante/src/main/resources/Icone/marque-de-croix%20(1).png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="419.0" layoutY="243.0" prefHeight="118.0" prefWidth="238.0">
+         <children>
+            <Label text="Diagnostic:">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="li3" prefHeight="99.0" prefWidth="262.0" />
+         </children>
+      </VBox>
+      <JFXButton fx:id="button1" alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="38.0" layoutY="406.0" onMouseClicked="#save" prefHeight="38.0" prefWidth="110.0" style="-fx-background-color: #007F7F;" text="Enrégistrer">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <ImageView accessibleText="Project List" fitHeight="26.0" fitWidth="22.0" layoutX="51.0" layoutY="414.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:///C:/Users/ADMIN/IdeaProjects/ApplicationCentre2Sante/src/main/resources/Icone/correct.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

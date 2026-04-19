@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="367.0" prefWidth="884.0" stylesheets="/css/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kangamoyet.djadou.kouassid.applicationcentre2sante.PrelevementInterController">
+   <children>
+      <VBox layoutX="64.0" layoutY="265.0" prefHeight="68.0" prefWidth="228.0" styleClass="raised-interface">
+         <children>
+            <Label text="Type prélèvement">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="comboBox1" prefHeight="26.0" prefWidth="265.0" />
+         </children>
+      </VBox>
+      <VBox layoutX="626.0" layoutY="160.0" prefHeight="68.0" prefWidth="238.0">
+         <children>
+            <Label text="Infirmier en charge">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="comboBox2" prefHeight="26.0" prefWidth="265.0" />
+         </children>
+      </VBox>
+      <VBox layoutX="69.0" layoutY="128.0" prefHeight="118.0" prefWidth="228.0">
+         <children>
+            <Label text="Heure">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="idheure" prefHeight="26.0" prefWidth="238.0" />
+            <Label text="Date">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="iddate" editable="false" prefHeight="26.0" prefWidth="228.0" />
+         </children>
+      </VBox>
+      <VBox layoutX="373.0" layoutY="57.0" prefHeight="118.0" prefWidth="238.0">
+         <children>
+            <Label text="Résultats prélèvement">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="text" prefHeight="99.0" prefWidth="262.0" />
+         </children>
+      </VBox>
+      <JFXButton fx:id="button1" onMouseClicked="#save" alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="750.0" layoutY="290.0" prefHeight="38.0" prefWidth="110.0" style="-fx-background-color: #007F7F;" text="Enrégistrer">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <ImageView accessibleText="Project List" fitHeight="26.0" fitWidth="22.0" layoutX="760.0" layoutY="298.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:///C:/Users/ADMIN/IdeaProjects/ApplicationCentre2Sante/src/main/resources/Icone/correct.png" />
+         </image>
+      </ImageView>
+      <Pane layoutY="363.0" prefHeight="4.0" prefWidth="884.0" style="-fx-background-color: #007F7F;" />
+      <JFXButton fx:id="closeButton" alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="764.0" layoutY="25.0" onMouseClicked="#close" prefHeight="38.0" prefWidth="82.0" style="-fx-background-color: white;" text="Fermer" textFill="#f40404" />
+      <ImageView accessibleText="Project List" fitHeight="26.0" fitWidth="36.0" layoutX="771.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:///C:/Users/ADMIN/IdeaProjects/ApplicationCentre2Sante/src/main/resources/Icone/marque-de-croix%20(1).png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="69.0" layoutY="48.0" prefHeight="68.0" prefWidth="228.0">
+         <children>
+            <Label text="Nom patient">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="comboBox" prefHeight="26.0" prefWidth="265.0" />
+         </children>
+      </VBox>
+      <VBox layoutX="373.0" layoutY="201.0" prefHeight="118.0" prefWidth="238.0">
+         <children>
+            <Label text="Commentaire">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="text1" prefHeight="99.0" prefWidth="262.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="455.0" prefWidth="1042.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kangamoyet.djadou.kouassid.applicationcentre2sante.HospitalisationTableView">
+   <children>
+      <AnchorPane layoutY="164.0" prefHeight="290.0" prefWidth="1042.0" style="-fx-background-color: #473E98;">
+         <children>
+            <TableView fx:id="HospitalisationTable" layoutX="14.0" layoutY="14.0" prefHeight="263.0" prefWidth="1010.0">
+               <columns>
+                  <TableColumn fx:id="idCol" maxWidth="70.0" prefWidth="58.39999008178711" style="-fx-alignment: center;" text="ID" />
+                  <TableColumn fx:id="nameCol" maxWidth="142.39999389648438" prefWidth="127.20001220703125" style="-fx-alignment: center;" text="NOM PATIENTE" />
+                  <TableColumn fx:id="prenomCol" maxWidth="184.8000030517578" prefWidth="172.8000030517578" style="-fx-alignment: center;" text="DATE ENTRER" />
+                  <TableColumn fx:id="sexeCol" maxWidth="238.39996337890625" prefWidth="163.20001220703125" style="-fx-alignment: center;" text="DATE DE SORTIE" />
+                  <TableColumn fx:id="SpecialiteCol" maxWidth="288.0" prefWidth="140.79998779296875" style="-fx-alignment: center;" text="MOTIF" />
+                  <TableColumn fx:id="editCol" maxWidth="366.4000244140625" minWidth="5.5999755859375" prefWidth="183.199951171875" style="-fx-alignment: center;" text="CHAMBRE OCCUPEE" />
+                  <TableColumn fx:id="editCol1" maxWidth="366.4000244140625" minWidth="5.5999755859375" prefWidth="162.400146484375" style="-fx-alignment: center;" text="BOUTON" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Pane layoutY="78.0" prefHeight="2.0" prefWidth="1041.0" style="-fx-background-color: #473E98;" />
+      <Label layoutX="48.0" layoutY="21.0" prefHeight="34.0" prefWidth="227.0" text="Liste Hospitalisation">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="searchField" layoutX="48.0" layoutY="106.0" prefHeight="27.0" prefWidth="249.0" promptText="Rechercher..." />
+   </children>
+</AnchorPane>

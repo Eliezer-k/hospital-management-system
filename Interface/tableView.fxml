@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="okokok" prefHeight="444.0" prefWidth="1072.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kangamoyet.djadou.kouassid.applicationcentre2sante.TableViewController">
+    
+   <children>
+      <Pane layoutY="69.0" prefHeight="5.0" prefWidth="1072.0" style="-fx-background-color: #007F7F;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Text layoutX="39.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des patients" wrappingWidth="245.13671875">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+       <Pane fx:id="iconPane" prefWidth="0.0" />
+      <JFXButton fx:id="addUserButton" alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="41.0" layoutY="89.0" prefHeight="42.0" prefWidth="91.0" style="-fx-background-color: white;" text="Ajouter" />
+      <JFXButton fx:id="refreshButton" alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="162.0" layoutY="89.0" prefHeight="42.0" prefWidth="91.0" style="-fx-background-color: white;" text="Actualiser" />
+      <JFXButton fx:id="printButton" alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="284.0" layoutY="89.0" prefHeight="42.0" prefWidth="91.0" style="-fx-background-color: white;" text="Imprimer" />
+      <ImageView accessibleText="Project List" fitHeight="16.0" fitWidth="144.0" layoutX="63.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Icone/ajout-dutilisateur%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView accessibleText="Project List" fitHeight="16.0" fitWidth="144.0" layoutX="171.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Icone/rafraichir%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView accessibleText="Project List" fitHeight="16.0" fitWidth="144.0" layoutX="296.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Icone/impression%20(1).png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="-8.0" layoutY="169.0" prefHeight="303.0" prefWidth="1079.0" style="-fx-background-color: #007F7F;">
+         <children>
+            <TableView fx:id="studentsTable" layoutX="29.0" layoutY="16.0" prefHeight="272.0" prefWidth="1035.0">
+              <columns>
+                  <TableColumn fx:id="idCol" maxWidth="70.0" prefWidth="46.39999580383301" style="-fx-alignment: center;" text="ID" />
+                  <TableColumn fx:id="nameCol" maxWidth="123.99999237060547" prefWidth="81.5999984741211" style="-fx-alignment: center;" text="NOM" />
+                  <TableColumn fx:id="prenomCol" maxWidth="142.39999389648438" prefWidth="98.39993286132812" style="-fx-alignment: center;" text="PRENOMS" />
+                  <TableColumn fx:id="birthCol" maxWidth="130.40008544921875" prefWidth="130.40008544921875" style="-fx-alignment: center;" text="DATE DE NAISSANCE" />
+                  <TableColumn fx:id="sexeCol" maxWidth="100.0" prefWidth="79.20001220703125" style="-fx-alignment: center;" text="SEXE" />
+                  <TableColumn fx:id="telephoneCol" maxWidth="160.80001831054688" prefWidth="106.39999389648438" style="-fx-alignment: center;" text="TELEPHONE" />
+                  <TableColumn fx:id="NumeroCol" maxWidth="254.40008544921875" prefWidth="224.79998779296875" style="-fx-alignment: center;" text="NUMERO DE SECURITE SOCIALE" />
+                  <TableColumn fx:id="editCol" maxWidth="265.5999633789063" minWidth="5.5999755859375" prefWidth="265.5999633789063" style="-fx-alignment: center;" text="BOUTON" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

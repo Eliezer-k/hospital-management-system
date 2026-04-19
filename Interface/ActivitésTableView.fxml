@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="394.0" prefWidth="1090.0" stylesheets="/css/Design.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kangamoyet.djadou.kouassid.applicationcentre2sante.ActivitePersonnelController">
+    <TableView fx:id="tableView" prefHeight="414.0" prefWidth="877.0">
+        <columns>
+            <TableColumn fx:id="nomPersonnelColumn" prefWidth="149.60000306367874" text="Nom du Personnel" />
+            <TableColumn fx:id="serviceColumn" prefWidth="108.80000305175781" text="Name of staff" />
+            <TableColumn fx:id="typeActiviteColumn" prefWidth="348.7999572753906" text="kind of activity" />
+            <TableColumn fx:id="descriptionColumn" minWidth="0.0" prefWidth="0.0" text="Description" />
+            <TableColumn fx:id="dateColumn" prefWidth="158.39990234375" text="Date" />
+            <TableColumn fx:id="heureColumn" prefWidth="120.800048828125" text="Time" />
+        </columns>
+    </TableView>
+</AnchorPane>

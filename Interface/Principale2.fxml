@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="628.0" prefWidth="1403.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kangamoyet.djadou.kouassid.applicationcentre2sante.HelloController">
+   <children>
+      <Pane layoutX="-1.0" prefHeight="122.0" prefWidth="1403.0" style="-fx-background-color: #473E98;">
+         <Label layoutX="238.0" layoutY="28.0" text="Bienvenue Dr.KANGA" textFill="WHITE">
+            <font>
+               <Font size="36.0" />
+            </font>
+         </Label>
+         <Label layoutX="238.0" layoutY="89.0" text="Ma MEDECINE Since 2015" textFill="WHITE">
+            <font>
+               <Font size="13.0" />
+            </font>
+         </Label>
+         <children>
+            <JFXButton fx:id="Buttondeco" buttonType="RAISED" layoutX="1202.0" layoutY="46.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#handleDeconnexionButtonAction" prefHeight="30.0" prefWidth="163.0" ripplerFill="WHITE" style="-fx-background-color: #007F7F;" text="DECONNEXION" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ButtonAccueil" buttonType="RAISED" layoutX="1076.0" layoutY="46.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#okokok" prefHeight="30.0" prefWidth="99.0" ripplerFill="WHITE" style="-fx-background-color: #007F7F;" text="ACCUEIL" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <VBox layoutX="-1.0" layoutY="122.4" prefHeight="438.0" prefWidth="245.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="122.0">
+         <children>
+            <Label prefHeight="30.0" prefWidth="252.0" text="TOUT NOS SERVICES" textFill="#171717">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="60.0" />
+               </VBox.margin>
+            </Label>
+            <JFXButton fx:id="ButtonPatient1" alignment="BASELINE_LEFT" graphicTextGap="10.0" onMouseClicked="#clickButtonPatient1" prefHeight="43.0" prefWidth="252.0" ripplerFill="#bfadf8" text="Patients" textFill="#5b5858">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <graphic>
+                  <ImageView accessibleText="Project List" fitHeight="16.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:///C:/Users/ADMIN/IdeaProjects/ApplicationCentre2Sante/src/images/icons8_Handshake_64px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="ButtonRDV" alignment="BASELINE_LEFT" graphicTextGap="10.0" onMouseClicked="#RDV" prefHeight="43.0" prefWidth="252.0" ripplerFill="#bfadf8" text="Rendez-Vous" textFill="#5b5858">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:///C:/Users/ADMIN/IdeaProjects/ApplicationCentre2Sante/src/images/projections.png" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="okok" alignment="BASELINE_LEFT" graphicTextGap="10.0" onMouseClicked="#clickButtonPatient11" prefHeight="43.0" prefWidth="252.0" ripplerFill="#bfadf8" text="Service accouchement" textFill="#5b5858">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:///C:/Users/ADMIN/IdeaProjects/ApplicationCentre2Sante/src/images/conge-parental%20(1).png" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="buttonHosp" alignment="BASELINE_LEFT" graphicTextGap="10.0" onMouseClicked="#Hospitalisation" prefHeight="43.0" prefWidth="252.0" ripplerFill="#bfadf8" text="Hospitalisation" textFill="#5b5858">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <graphic>
+                  <ImageView accessibleText="Project List" fitHeight="16.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:///C:/Users/ADMIN/IdeaProjects/ApplicationCentre2Sante/src/images/icons8_US_Dollar_64px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+            <Label prefHeight="30.0" prefWidth="252.0" text="ENTREPRISES" textFill="#171717">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Label>
+            <JFXButton fx:id="ButtonSuivi" onMouseClicked="#showSuiviPatient" alignment="BASELINE_LEFT" graphicTextGap="10.0" prefHeight="43.0" prefWidth="252.0" ripplerFill="#bfadf8" text="Suivis" textFill="#5b5858">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <graphic>
+                  <ImageView accessibleText="Project List" fitHeight="16.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:///C:/Users/ADMIN/IdeaProjects/ApplicationCentre2Sante/src/images/reliabilty.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+            <Label prefHeight="30.0" prefWidth="252.0" text="RESULTATS" textFill="#171717">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </Label>
+            <JFXButton fx:id="buttonCon" alignment="BASELINE_LEFT" graphicTextGap="10.0" onMouseClicked="#clickButtonConsultation" prefHeight="43.0" prefWidth="265.0" ripplerFill="#bfadf8" text="Liste Consultation" textFill="#5b5858">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:///C:/Users/ADMIN/IdeaProjects/ApplicationCentre2Sante/src/images/projects.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+         </children>
+      </VBox>
+      <Pane layoutX="74.0" layoutY="34.0" prefHeight="128.0" prefWidth="147.0" style="-fx-background-color: #fff;">
+         <children>
+            <ImageView fitHeight="99.0" fitWidth="99.0" layoutX="24.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:///C:/Users/ADMIN/IdeaProjects/ApplicationCentre2Sante/src/images/zarla-ma-mdecine-1x1-2400x2400-20210603-yqg9hgjy33b3w8rhyvrf.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="10.0" radius="4.5" width="10.0" />
+         </effect>
+      </Pane>
+      <ScrollPane fx:id="scrollpane" layoutX="268.0" layoutY="138.0" prefHeight="472.0" prefWidth="1090.0" />
+   </children>
+</AnchorPane>

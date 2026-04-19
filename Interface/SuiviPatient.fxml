@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="394.0" prefWidth="1090.0" xmlns="http://javafx.com/javafx/21" stylesheets="/css/Design.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kangamoyet.djadou.kouassid.applicationcentre2sante.SuiviPatientController">
+    <VBox xmlns:fx="http://javafx.com/fxml">
+        <TableView fx:id="tableSuiviPatient" prefHeight="400.0" stylesheets="/css/Design.css" prefWidth="740.0" >
+            <columns>
+                <TableColumn fx:id="colDate" prefWidth="108.79998779296875" text="DATE" />
+                <TableColumn fx:id="colType" prefWidth="223.99998474121094" text="TYPE D'ITERACTION" />
+                <TableColumn fx:id="colDetails" prefWidth="406.3999938964844" text="DETAILS" />
+            </columns>
+        </TableView>
+    </VBox>
+</AnchorPane>

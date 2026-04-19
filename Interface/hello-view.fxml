@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="388.0" prefWidth="733.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kangamoyet.djadou.kouassid.applicationcentre2sante.HelloController">
+   <children>
+      <Button fx:id="buttonconnecter" layoutX="257.0" layoutY="236.0" mnemonicParsing="false" onMouseClicked="#setButtonconnecter" prefHeight="36.0" prefWidth="133.0" text="Se connecter" textAlignment="RIGHT">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="63.0" layoutY="134.0" text="Nom utilisateurs:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="63.0" layoutY="182.0" text="Mot de passe:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username" layoutX="208.0" layoutY="131.0" prefHeight="26.0" prefWidth="182.0" />
+      <Label layoutX="63.0" layoutY="60.0" text="Welcome" textFill="#151515">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="password" layoutX="208.0" layoutY="180.0" prefHeight="26.0" prefWidth="182.0" />
+      <ImageView fitHeight="396.0" fitWidth="320.0" layoutX="415.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:///C:/Users/ADMIN/IdeaProjects/ApplicationCentre2Sante/src/images/Fiche_descriptive_de_sequence.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="448.0" stylesheets="/css/styles.css" prefWidth="1075.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kangamoyet.djadou.kouassid.applicationcentre2sante.TableView4Controller">
+   <children>
+      <Label layoutX="25.0" layoutY="20.0" prefHeight="34.0" prefWidth="247.0" text="Consultation patients">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutY="158.0" prefHeight="290.0" prefWidth="1073.0" style="-fx-background-color: #473E98;">
+         <children>
+            <TableView fx:id="studentsTable" layoutX="21.0" layoutY="14.0" prefHeight="263.0" prefWidth="1034.0">
+               <columns>
+                  <TableColumn fx:id="idCol" maxWidth="87.99999237060547" prefWidth="40.799983978271484" style="-fx-alignment: center;" text="ID" />
+                  <TableColumn fx:id="nameCol" maxWidth="192.8000030517578" prefWidth="101.5999755859375" style="-fx-alignment: center;" text="NOM" />
+                  <TableColumn fx:id="prenomCol" maxWidth="274.40003967285156" prefWidth="85.59999084472656" style="-fx-alignment: center;" text="DATE" />
+                  <TableColumn fx:id="sexeCol" maxWidth="411.199951171875" prefWidth="110.4000244140625" style="-fx-alignment: center;" text="TEMPERATURE" />
+                  <TableColumn fx:id="SpecialiteCol" maxWidth="352.7999267578125" prefWidth="100.00003051757812" style="-fx-alignment: center;" text="POIDS" />
+                   <TableColumn fx:id="SpecialiteCol1" maxWidth="352.7999267578125" prefWidth="146.39993286132812" style="-fx-alignment: center;" text="PRESSION ARTERIELLE" />
+                   <TableColumn fx:id="SpecialiteCol2" maxWidth="352.7999267578125" prefWidth="146.4000244140625" style="-fx-alignment: center;" text="FREQUENCE CARDIAQUE" />
+                   <TableColumn fx:id="SpecialiteCol3" maxWidth="352.7999267578125" prefWidth="155.199951171875" style="-fx-alignment: center;" text="FREQUENCE RESPIRATOIRE" />
+                   <TableColumn fx:id="editCol" maxWidth="352.7999267578125" prefWidth="148.0" style="-fx-alignment: center;" text="BOUTON" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Pane fx:id="iconPane" prefWidth="0.0" />
+      <JFXButton fx:id="refreshButton" alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="18.0" layoutY="98.0" prefHeight="42.0" prefWidth="91.0" style="-fx-background-color: white;" text="Actualiser" />
+      <JFXButton fx:id="printButton" alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="133.0" layoutY="98.0" prefHeight="42.0" prefWidth="91.0" style="-fx-background-color: white;" text="Imprimer" />
+      <ImageView accessibleText="Project List" fitHeight="16.0" fitWidth="144.0" layoutX="25.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Icone/rafraichir%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView accessibleText="Project List" fitHeight="16.0" fitWidth="144.0" layoutX="141.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Icone/impression%20(1).png" />
+         </image>
+      </ImageView>
+      <Pane layoutY="67.0" prefHeight="3.0" prefWidth="1066.0" style="-fx-background-color: #473E98;" />
+   </children>
+</AnchorPane>

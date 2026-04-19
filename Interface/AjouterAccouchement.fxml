@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="530.0" stylesheets="/css/styles.css" prefWidth="875.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kangamoyet.djadou.kouassid.applicationcentre2sante.AccouchementFormController">
+   <children>
+      <VBox layoutX="34.0" layoutY="95.0" prefHeight="177.0" prefWidth="228.0" styleClass="raised-interface">
+         <children>
+            <Label text="Nom patiente">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="patientComboBox" prefHeight="26.0" prefWidth="226.0" />
+            <Label text="Heure ">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="heureAccouchementField" />
+            <Label text="Date ">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="dateAccouchementPicker" prefHeight="26.0" prefWidth="228.0" />
+         </children>
+      </VBox>
+      <Label layoutX="26.0" layoutY="8.0" prefHeight="58.0" prefWidth="307.0" text="Enrégistrer un accouchement">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Pane layoutY="64.0" prefHeight="3.0" prefWidth="875.0" style="-fx-background-color: #007F7F;" />
+      <JFXButton fx:id="closeButton" onMouseClicked="#close" alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="745.0" layoutY="18.0" prefHeight="38.0" prefWidth="82.0" style="-fx-background-color: white;" text="Fermer" textFill="#f40404" />
+      <JFXButton fx:id="ButtonAj" onMouseClicked="#save" alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="34.0" layoutY="475.0" prefHeight="38.0" prefWidth="108.0" style="-fx-background-color: #007F7F;" text="Enrégistrer">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <ImageView accessibleText="Project List" fitHeight="26.0" fitWidth="22.0" layoutX="40.0" layoutY="483.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Icone/correct.png" />
+         </image>
+      </ImageView>
+      <ImageView accessibleText="Project List" fitHeight="22.0" fitWidth="22.0" layoutX="753.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Icone/marque-de-croix%20(1).png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="262.0" layoutY="300.0" prefHeight="114.0" prefWidth="228.0">
+         <children>
+            <Label text="Détails des complications">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="detailsComplicationsField" prefHeight="82.0" prefWidth="255.0" />
+         </children>
+      </VBox>
+      <Label layoutX="35.0" layoutY="303.0" text="Complication">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="check1" layoutX="30.0" layoutY="340.0" mnemonicParsing="false" text="Oui" />
+      <CheckBox fx:id="check2" layoutX="102.0" layoutY="340.0" mnemonicParsing="false" text="Non" />
+      <VBox layoutX="517.0" layoutY="95.0" prefHeight="114.0" prefWidth="228.0">
+         <children>
+            <Label text="Type accouchement">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="typeAccouchementComboBox" prefHeight="26.0" prefWidth="226.0" />
+            <Label text="Nom du medecin">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="nomMedecinField" prefHeight="26.0" prefWidth="226.0" />
+            <Label text="Nom sage-femme">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="nomSageFemmeField" prefHeight="26.0" prefWidth="226.0" />
+         </children>
+      </VBox>
+      <Separator layoutX="35.0" layoutY="277.0" prefHeight="26.0" prefWidth="817.0" />
+      <Separator layoutX="37.0" layoutY="438.0" prefHeight="26.0" prefWidth="818.0" />
+      <HBox layoutX="552.0" layoutY="310.0" prefHeight="38.0" prefWidth="297.0">
+         <children>
+            <Label text="Poids du bébé  ">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="poidsBebeField" />
+         </children>
+      </HBox>
+      <HBox layoutX="552.0" layoutY="348.0" prefHeight="38.0" prefWidth="297.0">
+         <children>
+            <Label text="Taille du bébé  ">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tailleBebeField" />
+         </children>
+      </HBox>
+      <HBox layoutX="552.0" layoutY="386.0" prefHeight="38.0" prefWidth="286.0">
+         <children>
+            <Label text="Sexe du bébé   ">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="sexeBebeComboBox" prefHeight="26.0" prefWidth="150.0" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

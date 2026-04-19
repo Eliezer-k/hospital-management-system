@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="444.0" prefWidth="1090.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kangamoyet.djadou.kouassid.applicationcentre2sante.TableView2Controller">
+   <children>
+      <Label layoutX="25.0" layoutY="14.0" prefHeight="34.0" prefWidth="206.0" text="Liste du personnel">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="-1.0" layoutY="155.0" prefHeight="294.0" prefWidth="1090.0" style="-fx-background-color: #007F7F;">
+         <children>
+            <TableView fx:id="studentsTable" layoutX="19.0" layoutY="14.0" prefHeight="263.0" prefWidth="879.0">
+               <columns>
+                  <TableColumn fx:id="idCol" maxWidth="87.99999237060547" prefWidth="67.19997787475586" style="-fx-alignment: center;" text="ID" />
+                  <TableColumn fx:id="nameCol" maxWidth="192.8000030517578" prefWidth="122.39999389648438" style="-fx-alignment: center;" text="NOM" />
+                  <TableColumn fx:id="prenomCol" maxWidth="264.80003356933594" prefWidth="170.3999786376953" style="-fx-alignment: center;" text="PRENOMS" />
+                  <TableColumn fx:id="sexeCol" maxWidth="262.4000244140625" prefWidth="128.0" style="-fx-alignment: center;" text="SEXE" />
+                  <TableColumn fx:id="SpecialiteCol" maxWidth="338.4000244140625" prefWidth="187.19998168945312" style="-fx-alignment: center;" text="SPECIALITE" />
+                  <TableColumn fx:id="editCol" maxWidth="355.1999755859375" minWidth="5.5999755859375" prefWidth="201.60009765625" style="-fx-alignment: center;" text="BOUTON" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Pane layoutX="-1.0" layoutY="66.0" prefHeight="4.0" prefWidth="1090.0" style="-fx-background-color: #007F7F;" />
+      
+      <JFXButton fx:id="addUserButton" alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="46.0" layoutY="90.0" prefHeight="42.0" prefWidth="91.0" style="-fx-background-color: white;" text="Ajouter" />
+      <JFXButton fx:id="refreshButton" alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="172.0" layoutY="90.0" prefHeight="42.0" prefWidth="91.0" style="-fx-background-color: white;" text="Actualiser" />
+      <JFXButton fx:id="printButton" alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="299.0" layoutY="90.0" prefHeight="42.0" prefWidth="91.0" style="-fx-background-color: white;" text="Imprimer" />
+      <ImageView accessibleText="Project List" fitHeight="16.0" fitWidth="144.0" layoutX="62.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Icone/ajout-dutilisateur%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView accessibleText="Project List" fitHeight="16.0" fitWidth="144.0" layoutX="181.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Icone/rafraichir%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView accessibleText="Project List" fitHeight="16.0" fitWidth="144.0" layoutX="308.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Icone/impression%20(1).png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

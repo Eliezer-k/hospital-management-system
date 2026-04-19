@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="377.0" prefWidth="723.0" stylesheets="/css/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kangamoyet.djadou.kouassid.applicationcentre2sante.AjouterPatientsController">
+   <children>
+      <VBox layoutX="26.0" layoutY="100.0" prefHeight="177.0" prefWidth="228.0">
+         <children>
+            <Label text="Nom:">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="idnom" prefHeight="25.0" prefWidth="704.0" />
+            <Label text="Prénoms:">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="idprenom" />
+            <Label text="Date de naissance:">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="iddate" prefHeight="26.0" prefWidth="228.0" />
+         </children>
+      </VBox>
+      <VBox layoutX="455.0" layoutY="99.0" prefHeight="178.0" prefWidth="228.0">
+         <children>
+            <Label text="Sexe:">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="comboBox1" prefHeight="26.0" prefWidth="226.0" />
+            <Label text="Téléphone:">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="idtel" text="+225 " />
+            <Label text="Numéro de sécurité sociale:">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="idnum" />
+         </children>
+      </VBox>
+      <Label layoutX="26.0" layoutY="8.0" prefHeight="58.0" prefWidth="162.0" text="Ajouter patient">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Pane layoutY="69.0" prefHeight="6.0" prefWidth="728.0" style="-fx-background-color: #007F7F;" />
+      <JFXButton fx:id="closeButton" alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="601.0" layoutY="18.0" onMouseClicked="#close" prefHeight="38.0" prefWidth="82.0" style="-fx-background-color: white;" text="Fermer" textFill="#f40404" />
+      <JFXButton fx:id="ButtonAj" alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="26.0" layoutY="303.0" onMouseClicked="#save" prefHeight="38.0" prefWidth="108.0" style="-fx-background-color: #007F7F;" text="Enrégistrer">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <ImageView accessibleText="Project List" fitHeight="26.0" fitWidth="22.0" layoutX="38.0" layoutY="311.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Icone/correct.png" />
+         </image>
+      </ImageView>
+      <ImageView accessibleText="Project List" fitHeight="22.0" fitWidth="22.0" layoutX="609.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Icone/marque-de-croix%20(1).png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

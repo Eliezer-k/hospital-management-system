@@ -1,0 +1,7 @@
+.raised-interface {
+    -fx-background-color: transparent;
+    -fx-padding: 0px 20px 20px 20px; /* Déplacer le contenu vers le bas pour couvrir la barre de titre */
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 5);
+}
